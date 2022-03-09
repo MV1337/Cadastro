@@ -1,0 +1,19 @@
+<h1>BEM VINDO AO MEU PROJETO</h1>
+<br>
+{{#if session.userid}}
+<h1>Você está logado</h1>
+<br>
+<ul>
+    <li>
+        <a href="/logout" class="btn">Logout</a>
+    </li>
+</ul>
+
+{{else}}
+<div class="buttons">
+    <ul>
+        <li> <a href="/register" class="btn">registrar</a> </li>
+        <li> <a href="/login" class="btn">login</a> </li>
+    </ul>
+</div>
+{{/if}}
